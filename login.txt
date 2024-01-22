@@ -1,0 +1,3 @@
+ログインURL        https://kikoop.jp/wp-admin/
+ID（管理者）        kikoop_owner
+PASS（管理者）        QcjjR9jdWedc
