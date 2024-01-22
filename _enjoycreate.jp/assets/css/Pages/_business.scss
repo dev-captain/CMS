@@ -1,0 +1,61 @@
+.sub_business {
+    .wrap_in {
+        max-width: 800px;
+    }
+
+    .box {
+        padding: 50px;
+        border-radius: 16.57px;
+        background: #fff;
+        box-shadow: 3px 3px 5px rgba(7, 2, 3, 0.4);
+        margin-top: 50px;
+        @include media('sp') {
+            padding: 18px;
+            margin-top: 25px;
+        }
+
+        ul {
+            line-height: 34px;
+            list-style-type: disc;
+            margin-inline-start: 20px;
+            color: var(--dark_cyan);
+        }
+
+        table {
+            width: 100%;
+            border-spacing: 0 20px;
+            border-collapse: inherit;
+
+            td {
+                margin-top: 50px;
+                padding-left: 30px;
+            }
+
+            .jun34 {
+                width: 100px;
+                margin-right: 20px;
+                text-align: center;
+                background: #7A7167;
+                padding-left: 0px;
+            }
+        }
+
+        .row-cols-md-3 {
+            .text-center:not(:last-child) {
+                background-image: linear-gradient(to bottom, #474645 50%, transparent 50%);
+                background-size: 1px 10px;
+                background-position-x: right;
+                background-repeat: repeat-y;
+
+                @include media('sp') {
+                    background-image: linear-gradient(to right, #474645 50%, transparent 50%);
+                    background-size:  10px 1px;
+                    background-position-y: bottom;
+                    background-repeat: repeat-x;
+                    padding-bottom: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

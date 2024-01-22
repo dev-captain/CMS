@@ -1,0 +1,187 @@
+.sub_about {
+    ._row1 {
+        padding: 50px;
+        margin-top: 50px;
+
+        @include media('sp') {
+            padding: 25px;
+            margin-top: 25px;
+        }
+
+        .text-nowrap {
+            padding-right: 50px;
+            margin-right: 50px;
+            border-right: 1px solid #767676;
+
+            @include media('sp') {
+                padding-right: 0;
+                margin-right: 0;
+                padding-bottom: 25px;
+                margin-bottom: 25px;
+                border-right: none;
+                border-bottom: 1px solid #767676;
+            }
+        }
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 40% calc(60% - 16px);
+        gap: 16px;
+        margin-bottom: 16px;
+
+        @include media('sp') {
+            grid-template-columns: 100%;
+        }
+
+        img,
+        &~img {
+            border-radius: 20px;
+        }
+
+        ._main {
+            height: 100%;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        ._sub {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+    }
+
+    .wrapper_once {
+        h4 {
+            font-family: 'Jun34Pro-Medium';
+            font-size: 22px;
+            margin: 20px 0 15px;
+        }
+
+        table {
+            margin-top: 20px;
+
+            td {
+                padding-top: 8px;
+                padding-right: 28px;
+                white-space: nowrap;
+            }
+        }
+
+        .iframe {
+            height: 100%;
+
+            @include media('sp') {
+                height: 400px;
+                margin-top: 16px;
+            }
+        }
+
+    }
+}
+
+.top_about {
+    &.sub {
+        margin-top: 124px;
+
+        background: var(--soft_bg1);
+        padding: 150px 0;
+
+        -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+        clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+
+        @include media('sp') {
+            padding: 80px 0;
+            margin-top: 75px;
+
+            -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+            clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+        }
+
+    }
+}
+
+.about_worry {
+    padding: 100px 0 50px;
+
+    @include media('sp') {
+        padding: 50px 0;
+    }
+
+    .arrow {
+        margin-top: -220px;
+    }
+
+    &-wrap {
+        ul {
+            width: fit-content;
+            margin: auto;
+
+            li {
+                position: relative;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                font-size: 20px;
+                line-height: 32px;
+                background-image: linear-gradient(to right, #767676 50%, transparent 50%);
+                background-position-y: bottom;
+                background-size: 10px 1px;
+                background-repeat: repeat-x;
+                padding-left: 32px;
+
+                &::before {
+                    width: 24.8px;
+                    height: 22.97px;
+                    background: url(../img/top/check_icon.png);
+                    background-size: cover;
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 5px;
+                }
+            }
+        }
+
+        .jun34 {
+            margin-top: 40px;
+            font-size: 20px;
+            p {
+                font-size: 22px;
+                color: #B40019;
+                margin: auto;
+                display: initial;
+                width: fit-content;
+                margin-top: 10px;
+                background: linear-gradient(transparent 60%,#FFF084 0%);
+                b {
+                    font-size: 37px;
+                }
+            }
+        }
+    }
+}
+
+.about_company {
+    &-wrap {
+        margin-top: 50px;
+        table {
+            width: 100%;
+            th ,td {
+                padding: 40px;
+                border: 1px solid #767676;
+            }
+
+            th {
+                width: 184px;
+                text-align: center;
+                background: #EBEBEB;
+                font-family: 'Jun34Pro-Medium';
+            }
+        }
+    }
+}

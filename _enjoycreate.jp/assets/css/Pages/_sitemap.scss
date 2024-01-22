@@ -1,0 +1,100 @@
+.sub_sitemap {
+    .wrap_in {
+        max-width: 900px;
+    }
+
+    .sitemap_content {
+        padding-top: 85px;
+        // max-width: 900px;
+        // width: calc(100% - 50px);
+        // margin: auto;
+        padding-bottom: 135px;
+
+        @include media('sp') {
+            padding: 40px 0 75px;
+        }
+
+        .title {
+            font-size: 20px;
+            position: relative;
+            padding-left: 45px;
+            margin-bottom: 60px;
+
+            &:before {
+                position: absolute;
+                content: '';
+                width: 30px;
+                height: 3px;
+                background-color: #BDBEBF;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                display: block;
+
+                @include media ('sp') {
+                    width: 15px;
+                }
+            }
+
+            @include media('sp') {
+                padding-left: 30px;
+                margin-bottom: 30px;
+            }
+        }
+
+        ul {
+            list-style-type: square;
+            color: #A6A7A7;
+            list-style-position: outside;
+            padding-inline-start: 20px;
+            font-size: 18px;
+            border-bottom: 0.5px solid #8E8E8F;
+            width: 100%;
+            padding-top: 35px;
+            padding-bottom: 40px;
+
+            @include media('sp') {
+                padding-top: 15px;
+                padding-bottom: 20px;
+                font-size: 14px;
+            }
+
+            li {
+                .list-title {
+                    color: #302D2C;
+                }
+
+                .list-content {
+                    margin-top: 25px;
+                    color: #302D2C;
+
+                    @include media('sp') {
+                        margin-top: 12px;
+                    }
+
+                    a {
+                        word-break: keep-all;
+                    }
+                    a:not(:last-child) {
+                        position: relative;
+                        margin-right: 40px;
+                        @include media('sp') {
+                            margin: 0;
+                        }
+                        &:after {
+                            position: absolute;
+                            content: '/';
+                            right: -20px;
+
+                            @include media('sp') {
+                                display: none;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}

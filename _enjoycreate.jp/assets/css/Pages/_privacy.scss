@@ -1,0 +1,55 @@
+.sub_privacy {
+    .wrap_in {
+        max-width: 950px;
+    }
+    .privacy_content {
+        padding-top: 85px;
+        // max-width: 950px;
+        // width: calc(100% - 50px);
+        // margin: auto;
+        padding-bottom: 135px;
+
+        @include media('sp') {
+            padding: 40px 0 75px;
+        }
+        .privacy_block {
+            margin-bottom: 45px;
+            .title {
+                font-size: 20px;
+                position: relative;
+                padding-left: 45px;
+                margin-bottom: 25px;
+    
+                &:before {
+                    position: absolute;
+                    content: '';
+                    width: 30px;
+                    height: 3px;
+                    background-color: #BDBEBF;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    display: block;
+    
+                    @include media ('sp') {
+                        width: 15px;
+                    }
+                }
+                @include media('sp') {
+                    padding-left: 30px;
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                }
+            }
+            .content {
+                font-size: 16px;
+                line-height: 2;
+                letter-spacing: 0;
+                @include media('sp') {
+                    font-size:14px
+                }
+            }
+        }
+    }
+
+}
