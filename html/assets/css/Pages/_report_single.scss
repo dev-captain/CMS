@@ -1,0 +1,119 @@
+.main {
+  padding-left: 100px;
+  padding-bottom: 50px;
+  background-color: #f7f7f7;
+  @include media("sp") {
+    padding: 0 30px;
+  }
+  .title {
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    @include media("tb") {
+      padding: 100px 0;
+      width: 100%;
+      flex-direction: column;
+    }
+    .title_main {
+      font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+      font-size: 80px;
+      line-height: 120px;
+      color: #d3d3d3;
+    }
+    .title_link {
+      font-size: 18px;
+      color: #38bcb1;
+      margin-left: 50px;
+      @include media("sp") {
+        margin: 0;
+      }
+      @include media('tb') {
+        margin-left: 0;
+      }
+      &::after {
+        content: "";
+        border-right: 1px solid #d3d3d3;
+        padding-left: 40px;
+        @include media("tb") {
+          padding: 0;
+          content: unset;
+        }
+      }
+    }
+    .title_date {
+      font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+      font-size: 21px;
+      line-height: 31px;
+      color: #a7a7a7;
+      margin-left: 70px;
+       @include media('tb') {
+        margin-left: 0;
+      }
+      @include media("sp") {
+        margin: 0;
+      }
+    }
+  }
+
+  //content
+
+  .content {
+    padding: 90px 50px;
+    max-width: 1416px;
+    width: calc(100% - 150px);
+    margin: auto;
+    background-color: #fff;
+    @include media('lb') {
+      width: calc(100% - 80px);
+    }
+    @include media("sp") {
+      padding: 30px;
+      width: 100%;
+    }
+    .content_top {
+      .top_title {
+        font-size: 40px;
+        line-height: 60px;
+        color: #404040;
+        text-align: center;
+        padding-bottom: 35px;
+        @include media('sp') {
+          font-size: 24px;
+          line-height: 1.5;
+        }
+      }
+      .top_link {
+        font-size: 18px;
+        line-height: 22px;
+        color: #38bcb1;
+        text-align: center;
+      }
+    }
+  }
+
+  .wysiwyg_editor {
+    margin-top: 60px;
+
+    img {
+      display: block;
+      margin: auto;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .prev_next {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+    font-size: 30px;
+    color: #d3d3d3;
+    max-width: 256px;
+    padding-bottom: 50px;
+    margin: auto;
+    margin-top: 70px;
+  }
+}
