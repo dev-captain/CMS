@@ -1,0 +1,341 @@
+@charset "utf-8";
+
+/* contact */
+
+
+/* header
+----------------------------------------- */
+.page-visual-area {
+	background: url(../images/contact/image.jpg) center center no-repeat;
+	background-size: cover;
+}
+.page-ttl {
+	position: absolute;
+	top: calc(50% + 25px - 2.5em);
+}
+
+/* contents
+----------------------------------------- */
+#contents {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.contact-body {
+	position: relative;
+	padding: 0 30px;
+	z-index: 100;
+}
+.contact-body .sec-ttl {
+	margin-bottom: 35px;
+	text-align: center;
+}
+.contact-body .sec-ttl .eng {
+	font-size: 1.6rem;
+	line-height: 1.2;
+}
+.contact-body .sec-ttl .jpn {
+	font-size: 1.0rem;
+	transform: scale(0.9);
+}
+.contact-form {
+	margin-top: 35px;
+}
+.contact-body .form-alert-text {
+	text-align: center;
+}
+.click_here {
+	border: 1px solid #F0F1F3;
+	display: block;
+	padding: 30px;
+	text-align: center;
+	font-size: 20px;
+}
+.click_ttl {
+	font-size: 15px;
+	line-height: 1;
+	position: relative;
+	width: max-content;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.click_ttl:after, .click_ttl:before {
+	position: absolute;
+	content: '';
+	width: 15px;
+	height: 1px;
+	background-color: #333;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.click_ttl:after {
+	right: -35px;
+}
+.click_ttl:before {
+	left: -35px;
+}
+.click_here .number {
+	font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tablet 560px - 959px */
+@media only screen and (min-width: 560px) {
+
+
+/* header
+----------------------------------------- */
+.page-visual-area {
+	background: url(../images/contact/image.jpg) center center no-repeat;
+	background-size: cover;
+}
+.page-ttl {
+	position: absolute;
+	top: calc(50% + 25px - 2.8em);
+}
+
+
+/* contents
+----------------------------------------- */
+#contents {
+	margin-top: 80px;
+}
+
+.contact-body {
+	position: relative;
+	max-width: 480px;
+	margin: 0 auto;
+	padding: 0;
+	z-index: 100;
+}
+.contact-body .sec-ttl {
+	margin-bottom: 45px;
+	text-align: center;
+}
+.contact-body .sec-ttl .eng {
+	font-size: 1.6rem;
+	line-height: 1.2;
+}
+.contact-body .sec-ttl .jpn {
+	font-size: 1.0rem;
+	transform: scale(0.9);
+}
+.contact-form {
+	margin-top: 35px;
+}
+.click_ttl {
+	font-size: 18px;
+}
+.click_here {
+	font-size: 25px;
+}
+.click_here .number {
+	font-size: 30px;
+}
+
+} /* tablet end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PC 960px - */
+@media only screen and (min-width: 960px) {
+
+/* header
+----------------------------------------- */
+.page-visual-area {
+	background: url(../images/contact/image.jpg) center center no-repeat;
+	background-size: cover;
+}
+.page-ttl {
+	position: absolute;
+	top: calc(50% + 30px - 3.5em);
+}
+
+
+/* contents
+----------------------------------------- */
+#contents {
+	margin-top: 100px;
+	margin-bottom: 240px;
+}
+
+.contact-body {
+	position: relative;
+	max-width: 720px;
+	margin: 0 auto;
+	padding: 0;
+	z-index: 100;
+}
+.contact-body .sec-ttl {
+	margin-bottom: 40px;
+	text-align: center;
+}
+.contact-body .sec-ttl .eng {
+	font-size: 2.4rem;
+	line-height: 1.2;
+}
+.contact-body .sec-ttl .jpn {
+	font-size: 1.0rem;
+	transform: scale(1.0);
+}
+.contact-form {
+	margin-top: 55px;
+}
+
+
+} /* PC end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PC:1201px - */
+@media only screen and (min-width: 1201px) {
+
+} /* PC end */
+
+

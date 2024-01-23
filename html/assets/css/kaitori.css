@@ -1,0 +1,943 @@
+@charset "utf-8";
+
+/* service */
+
+/* header
+----------------------------------------- */
+.page-visual-area {
+  background: url(../images/kaitori/mainvisual2.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.page-ttl {
+  position: absolute;
+  top: calc(50% + 25px - 3em);
+}
+
+/* contents
+----------------------------------------- */
+#contents {
+  margin-top: 70px;
+}
+
+/* intro-sec */
+.intro-sec {
+}
+
+.intro-sec-copy {
+  position: relative;
+  overflow: hidden;
+}
+
+.intro-sec-copy-inner {
+  width: auto;
+  margin: 60px auto 60px;
+  padding-top: 60px;
+
+  font-family: "Noto Sans JP", sans-serif;
+  /* -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl; */
+  vertical-align: top;
+  letter-spacing: 0.3em;
+  line-height: 3;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.intro-sec-copy::before {
+  content: "Buy & Sell";
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin: -1em 0 0 -1.93em;
+  font-family: "Marcellus", serif;
+  font-size: 25vw;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: #fff;
+  -webkit-text-stroke: 0.7px #e5e5e5;
+  z-index: -10;
+  transform: translateX(50%);
+  width: 100%;
+  left: unset !important;
+  text-align: center;
+}
+
+/* slide-img-area */
+.slide-img-area {
+}
+
+.slide-img-area-wrap {
+  position: relative;
+  padding: 70px 0;
+}
+
+.slide-img-area-wrap::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  margin: 0;
+  background-image: linear-gradient(
+    to bottom,
+    #999,
+    #999 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  background-size: 2px 3px;
+  background-repeat: repeat-y;
+}
+
+.slide-img01 {
+  width: 100%;
+}
+
+.slide-img01 li {
+  width: 260px !important;
+  height: auto;
+}
+
+.slide-img01 img {
+  width: 260px !important;
+  height: 200px;
+  object-fit: cover;
+}
+
+.intro-service-area {
+  margin-top: 50px;
+  padding-bottom: 100px;
+  /* background: url(../images/kaitori/service-bg_pc.jpg) top center no-repeat; */
+  background-size: cover;
+}
+
+.intro-service-area-figure {
+  width: 80%;
+  margin: 0 auto 40px;
+}
+
+.intro-service-area-lead {
+  padding: 0 40px;
+  font-size: 1.2rem;
+  line-height: 2.6;
+}
+
+/* flow-sec */
+.flow-sec {
+  padding: 20px 20px 60px;
+  background-color: #f0f1f3;
+}
+
+.flow-sec-inner {
+  position: relative;
+}
+
+.flow-sec-ttl-area {
+  padding: 0 20px;
+}
+
+.flow-sec-ttl {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  font-family: "Marcellus", serif;
+  font-size: 11rem;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: #fff;
+}
+
+.flow-sec-ttl-area-lead {
+  position: relative;
+  margin-bottom: 40px;
+  padding-top: 112px;
+  font-size: 1.2rem;
+  line-height: 2.2;
+  z-index: 10;
+}
+
+.flow-sec-flowlist {
+}
+
+.flow-sec-flowlist li {
+  position: relative;
+  margin-bottom: 70px;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.flow-sec-flowlist li::before {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: url(../images/kaitori/flow-bg-arrow.svg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.flow-sec-flowlist li:last-child {
+  margin-bottom: 0;
+}
+
+.flow-sec-flowlist li:last-child::before {
+  display: none;
+}
+
+.flowlist-img {
+  width: 100%;
+  height: 53vw;
+}
+
+.flowlist-body {
+  /* padding-top: 30px; */
+}
+
+.flowlist-ttl-area {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.flowlist-num {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 4.2rem;
+  color: #cfd2d6;
+  line-height: 1.2;
+}
+
+.flowlist-ttl {
+  padding-left: 38px;
+}
+
+.flowlist-ttl .jpn {
+  display: block;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.flowlist-ttl .eng {
+  display: block;
+  padding-left: 2px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #b0b4ba;
+}
+
+.flowlist-lead {
+  line-height: 2.5;
+}
+
+/* bottom-img-area */
+.bottom-img-area {
+  margin-top: 1px;
+}
+
+.bottom-left-img {
+  width: 100%;
+  height: 66vw;
+  background: url(../images/service/bottom-img01_sp.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.bottom-right-img {
+  margin-top: 1px;
+}
+
+.bottom-right-img-top {
+  display: flex;
+}
+
+.bottom-right-img-top-left {
+  width: calc(50% - 1px);
+  height: 66vw;
+  margin-right: 1px;
+  background: url(../images/service/bottom-img02_sp.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.bottom-right-img-top-right {
+  width: 50%;
+  height: 66vw;
+  background: url(../images/service/bottom-img03_sp.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.bottom-right-img-bottom {
+  width: 100%;
+  height: 66vw;
+  margin-top: 1px;
+  background: url(../images/service/bottom-img04_sp.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+/* tablet 560px - 959px */
+@media only screen and (min-width: 560px) {
+  /* header
+----------------------------------------- */
+  .page-visual-area {
+    background: url(../images/kaitori/mainvisual2.jpg) center center no-repeat;
+    background-size: cover;
+  }
+
+  .page-ttl {
+    position: absolute;
+    top: calc(50% + 25px - 3em);
+  }
+
+  /* contents
+----------------------------------------- */
+  #contents {
+    margin-top: 80px;
+  }
+
+  /* intro-sec */
+  .intro-sec {
+  }
+
+  .intro-sec-copy {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .intro-sec-copy-inner {
+    width: auto;
+    margin: 75px auto 60px;
+    font-family: "Noto Sans JP", sans-serif;
+    padding-top: 70px;
+
+    /* -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl; */
+    vertical-align: top;
+    letter-spacing: 0.3em;
+    line-height: 3;
+    font-size: 1.3rem;
+  }
+
+  .intro-sec-copy::before {
+    content: "Buy & Sell";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -0.9em 0 0 -1.93em;
+    font-family: "Marcellus", serif;
+    font-size: 14rem;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: #fff;
+    -webkit-text-stroke: 0.7px #e5e5e5;
+    z-index: -10;
+  }
+
+  /* slide-img-area */
+  .slide-img-area {
+  }
+
+  .slide-img-area-wrap {
+    position: relative;
+    padding: 90px 0;
+  }
+
+  .slide-img-area-wrap::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(
+      to bottom,
+      #999,
+      #999 1px,
+      transparent 1px,
+      transparent 3px
+    );
+    background-size: 2px 3px;
+    background-repeat: repeat-y;
+  }
+
+  .slide-img01 {
+    width: 100%;
+  }
+
+  .slide-img01 li {
+    width: 260px !important;
+    height: auto;
+  }
+
+  .slide-img01 img {
+    width: 260px !important;
+    height: 200px;
+  }
+
+  .intro-service-area {
+    margin-top: 50px;
+    padding-bottom: 100px;
+    /* background: url(../images/kaitori/service-bg_pc.jpg) top center no-repeat; */
+    background-size: cover;
+  }
+
+  .intro-service-area-figure {
+    width: 400px;
+    margin: 0 auto 40px;
+  }
+
+  .intro-service-area-lead {
+    width: 72%;
+    margin: 0 auto;
+    padding: 0 40px;
+    font-size: 1.2rem;
+    line-height: 2.6;
+  }
+
+  /* flow-sec */
+  .flow-sec {
+    padding: 20px 20px 80px;
+    background-color: #f0f1f3;
+  }
+
+  .flow-sec-inner {
+    position: relative;
+  }
+
+  .flow-sec-ttl-area {
+    padding: 0 20px;
+  }
+
+  .flow-sec-ttl {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    font-family: "Marcellus", serif;
+    font-size: 11rem;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: #fff;
+  }
+
+  .flow-sec-ttl-area-lead {
+    position: relative;
+    margin-bottom: 40px;
+    padding-top: 112px;
+    font-size: 1.2rem;
+    line-height: 2.2;
+    z-index: 10;
+  }
+
+  .flow-sec-flowlist {
+  }
+
+  .flow-sec-flowlist li {
+    position: relative;
+    margin-bottom: 90px;
+    padding: 30px 30px 20px;
+    background-color: #fff;
+  }
+
+  .flow-sec-flowlist li::before {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: url(../images/kaitori/flow-bg-arrow.svg) 0 0 no-repeat;
+    background-size: cover;
+  }
+
+  .flow-sec-flowlist li:last-child {
+    margin-bottom: 0;
+    padding: 30px 30px 30px;
+  }
+
+  .flow-sec-flowlist li:last-child::before {
+    display: none;
+  }
+
+  .flowlist-inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .flowlist-img {
+    width: 40%;
+    height: auto;
+  }
+
+  .flowlist-body {
+    width: 80%;
+    /* padding: 30px 0 30px 40px; */
+  }
+
+  .flowlist-ttl-area {
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+  .flowlist-num {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 4.2rem;
+    color: #cfd2d6;
+    line-height: 1.2;
+  }
+
+  .flowlist-ttl {
+    padding-left: 38px;
+  }
+
+  .flowlist-ttl .jpn {
+    display: block;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  .flowlist-ttl .eng {
+    display: block;
+    padding-left: 2px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #b0b4ba;
+  }
+
+  .flowlist-lead {
+    line-height: 2.5;
+  }
+
+  /* bottom-img-area */
+  .bottom-img-area {
+    display: flex;
+    margin-top: 1px;
+  }
+
+  .bottom-left-img {
+    width: calc(34% - 1px);
+    height: 60vw;
+    margin-right: 1px;
+    background: url(../images/service/bottom-img01_pc.jpg) center center
+      no-repeat;
+    background-size: cover;
+  }
+
+  .bottom-right-img {
+    width: 66%;
+    margin-top: 0;
+  }
+
+  .bottom-right-img-top {
+    display: flex;
+  }
+
+  .bottom-right-img-top-left {
+    width: calc(50% - 1px);
+    height: 30vw;
+    margin-right: 1px;
+    background: url(../images/service/bottom-img02_pc.jpg) center center
+      no-repeat;
+    background-size: cover;
+  }
+
+  .bottom-right-img-top-right {
+    width: 50%;
+    height: 30vw;
+    background: url(../images/service/bottom-img03_pc.jpg) center center
+      no-repeat;
+    background-size: cover;
+  }
+
+  .bottom-right-img-bottom {
+    width: 100%;
+    height: calc(30vw - 1px);
+    margin-top: 1px;
+    background: url(../images/service/bottom-img04_pc.jpg) center center
+      no-repeat;
+    background-size: cover;
+  }
+}
+
+/* tablet end */
+
+/* PC 960px - */
+@media only screen and (min-width: 960px) {
+  /* header
+----------------------------------------- */
+  .page-visual-area {
+    background: url(../images/kaitori/mainvisual2.jpg) center center no-repeat;
+    background-size: cover;
+  }
+
+  .page-ttl {
+    position: absolute;
+    top: calc(50% + 30px - 3em);
+  }
+
+  /* contents
+----------------------------------------- */
+  #contents {
+    margin-top: 115px;
+  }
+
+  /* intro-sec */
+  .intro-sec {
+  }
+
+  .intro-sec-copy {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .intro-sec-copy-inner {
+    /* width: 180px; */
+    padding-top: 100px;
+    margin: 90px auto 90px;
+    font-family: "Noto Sans JP", sans-serif;
+    /* -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl; */
+    vertical-align: top;
+    letter-spacing: 0.3em;
+    line-height: 3.4;
+    font-size: 1.75rem;
+  }
+
+  .intro-sec-copy::before {
+    content: "Buy & Sell";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -0.75em 0 0 -1.93em;
+    font-family: "Marcellus", serif;
+    font-size: 24rem;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: #fff;
+    -webkit-text-stroke: 1px #e5e5e5;
+    z-index: -10;
+  }
+
+  /* slide-img-area */
+  .slide-img-area {
+  }
+
+  .slide-img-area-wrap {
+    position: relative;
+    padding: 100px 0;
+  }
+
+  .slide-img-area-wrap::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(
+      to bottom,
+      #999,
+      #999 1px,
+      transparent 1px,
+      transparent 3px
+    );
+    background-size: 2px 3px;
+    background-repeat: repeat-y;
+  }
+
+  .slide-img01 {
+    width: 100%;
+  }
+
+  .slide-img01 li {
+    width: 500px !important;
+    height: auto;
+  }
+
+  .slide-img01 img {
+    width: 500px !important;
+    height: 300px;
+  }
+
+  .intro-service-area {
+    margin-top: 90px;
+    padding-bottom: 210px;
+    /* background: url(../images/kaitori/service-bg_pc.jpg) top center no-repeat; */
+    background-size: cover;
+  }
+
+  .intro-service-area-figure {
+    width: 476px;
+    margin: 0 auto 60px;
+  }
+
+  .intro-service-area-lead {
+    width: 500px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1.3rem;
+    line-height: 2.8;
+  }
+
+  /* flow-sec */
+  .flow-sec {
+    padding: 0 0 180px;
+    background-color: #f0f1f3;
+  }
+
+  .flow-sec-inner {
+    position: relative;
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .flow-sec-ttl-area {
+    margin-bottom: 125px;
+    padding: 0;
+  }
+
+  .flow-sec-ttl {
+    position: absolute;
+    top: 110px;
+    left: 10px;
+    font-family: "Marcellus", serif;
+    font-size: 20rem;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: #fff;
+  }
+
+  .flow-sec-ttl-area-lead {
+    position: relative;
+    margin-bottom: 40px;
+    padding: 200px 0 0 480px;
+    font-size: 1.3rem;
+    line-height: 2;
+    z-index: 10;
+  }
+
+  .flow-sec-flowlist {
+  }
+
+  .flow-sec-flowlist li {
+    position: relative;
+    margin-bottom: 90px;
+    padding: 50px 60px 30px;
+    background-color: #fff;
+  }
+
+  .flow-sec-flowlist li::before {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: url(../images/kaitori/flow-bg-arrow.svg) 0 0 no-repeat;
+    background-size: cover;
+  }
+
+  .flow-sec-flowlist li:last-child {
+    margin-bottom: 0;
+    padding: 50px 60px 50px;
+  }
+
+  .flow-sec-flowlist li:last-child::before {
+    display: none;
+  }
+
+  .flowlist-inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .flowlist-img {
+    width: 30%;
+    height: auto;
+  }
+
+  .flowlist-body {
+    width: 70%;
+    /* padding: 30px 0 40px 60px; */
+  }
+
+  .flowlist-ttl-area {
+    position: relative;
+    margin-bottom: 25px;
+  }
+
+  .flowlist-num {
+    position: absolute;
+    top: -10px;
+    left: auto;
+    right: 0;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 4.2rem;
+    color: #cfd2d6;
+    line-height: 1.2;
+  }
+
+  .flowlist-ttl {
+    padding-left: 0;
+  }
+
+  .flowlist-ttl .jpn {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    vertical-align: middle;
+  }
+
+  .flowlist-ttl .eng {
+    display: inline-block;
+    margin-top: 5px;
+    padding-left: 2px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #b0b4ba;
+    vertical-align: middle;
+  }
+
+  .flowlist-lead {
+    font-size: 1.3rem;
+    line-height: 2.6;
+  }
+
+  /* bottom-img-area */
+  .bottom-img-area {
+    display: flex;
+    margin-top: 1px;
+  }
+
+  .bottom-left-img {
+    width: calc(34% - 1px);
+    height: 50vw;
+    margin-right: 1px;
+    background: url(../images/service/bottom-img01_pc.jpg) center center
+      no-repeat;
+    background-size: cover;
+  }
+
+  .bottom-right-img {
+    width: 66%;
+    margin-top: 0;
+  }
+
+  .bottom-right-img-top {
+    display: flex;
+  }
+
+  .bottom-right-img-top-left {
+    width: calc(50% - 1px);
+    height: 25vw;
+    margin-right: 1px;
+    background: url(../images/service/bottom-img02_pc.jpg) center center
+      no-repeat;
+    background-size: cover;
+  }
+
+  .bottom-right-img-top-right {
+    width: 50%;
+    height: 25vw;
+    background: url(../images/service/bottom-img03_pc.jpg) center center
+      no-repeat;
+    background-size: cover;
+  }
+
+  .bottom-right-img-bottom {
+    width: 100%;
+    height: calc(25vw - 1px);
+    margin-top: 1px;
+    background: url(../images/service/bottom-img04_pc.jpg) center center
+      no-repeat;
+    background-size: cover;
+  }
+}
+
+/* PC end */
+
+/* IE11 */
+@media all and (-ms-high-contrast: none) {
+  *::-ms-backdrop,
+  .intro-sec-copy {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .intro-sec-copy-inner {
+    width: 180px;
+    height: 400px;
+    margin: 0 0 90px calc(50% + 295px);
+    font-family: "Noto Sans JP", sans-serif;
+    /* -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl; */
+    vertical-align: top;
+    letter-spacing: 0.3em;
+    line-height: 3.4;
+    font-size: 1.75rem;
+  }
+
+  .intro-sec-copy::before {
+    content: "Buy & Sell";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: "Marcellus", serif;
+    font-size: 24rem;
+    letter-spacing: -0.02em;
+    color: #f4f5f7;
+    z-index: -10;
+  }
+}
+
+/* edge */
+@supports (-ms-ime-align: auto) {
+  .intro-sec-copy::before {
+    content: "Buy & Sell";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -0.75em 0 0 -1.93em;
+    font-family: "Marcellus", serif;
+    font-size: 20rem;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: #fff;
+    -webkit-text-stroke: 0.3px #111;
+    z-index: -10;
+  }
+}
+
+/* PC:1201px - */
+@media only screen and (max-width: 1280px) {
+  .intro-sec-copy::before {
+    font-size: 15rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .intro-sec-copy::before {
+    font-size: 20vw;
+  }
+}
+
+/* PC end */

@@ -1,0 +1,8 @@
+管理URL
+http://dress56.com/wp-admin/
+
+管理者ID
+gorodress56
+
+管理者パスワード
+goro03-5537-1300
