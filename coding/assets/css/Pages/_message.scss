@@ -1,0 +1,291 @@
+.message_content {
+    &> {
+        .container {
+            padding: 115px 0;
+
+            &:nth-child(odd) {
+                background-color: #F2F0EE;
+            }
+
+            @include media('sp') {
+                padding: 50px 0;
+            }
+
+            .wrap {
+                display: flex;
+                gap: 60px;
+                align-items: flex-start;
+
+                @include media('lb') {
+                    gap: 40px;
+                }
+
+                @include media('tb') {
+                    flex-direction: column;
+                }
+
+                .left {
+                    width: 480px;
+
+                    img {
+                        height: 100%;
+                        aspect-ratio: 480 / 480;
+                        border-radius: 40px;
+                        object-fit: cover;
+                        width: 100%;
+                        @include media('tb') {
+                            aspect-ratio: 426 / 284;
+                        }
+
+                        @include media('sp') {
+                            border-radius: 20px;
+                        }
+                    }
+
+                    @include media('lb') {
+                        width: 400px;
+                    }
+
+                    @include media('tb') {
+                        width: 100%;
+                    }
+                }
+
+                .right {
+                    width: calc(100% - 480px - 65px);
+                    padding-right: 110px;
+
+                    @include media('lb') {
+                        width: calc(100% - 400px - 40px);
+                        padding-right: 25px;
+                    }
+
+                    @include media('tb') {
+                        padding-right: 0;
+                        width: 100%;
+                    }
+
+                    &-head {
+                        font-size: 38px;
+                        margin-bottom: 40px;
+
+                        @include media('lb') {
+                            font-size: 30px;
+                            margin-bottom: 20px;
+                        }
+
+                        @include media('sp') {
+                            font-size: 25px;
+                        }
+                    }
+
+                    &-des {
+                        font-size: 22px;
+
+                        @include media('lb') {
+                            font-size: 18px;
+                        }
+
+                        @include media('sp') {
+                            font-size: 16px;
+                        }
+                    }
+
+                    &-circle {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 45px;
+                        margin-top: 75px;
+
+                        @include media('tb') {
+                            gap: 200px;
+                            margin-top: 50px;
+                            justify-content: center;
+                        }
+
+                        @include media('sp') {
+                            gap: 100px;
+                            margin-top: 35px;
+                        }
+
+                        @include media('sm') {
+                            gap: 75px;
+                            margin-top: 20px;
+                        }
+
+                        position: relative;
+
+                        img {
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            top: 70px;
+
+                            @include media('lb') {
+                                top: 60px;
+                            }
+
+                            @include media('sp') {
+                                width: 40px;
+                                top: 50px;
+                            }
+
+                            @include media('sm') {
+                                top: 40px;
+                                width: 30px;
+                            }
+                        }
+
+                        .circle {
+                            &_content {
+                                width: 200px;
+                                height: 200px;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border: 1px solid #302D2C;
+                                font-size: 28px;
+                                text-align: center;
+                                line-height: 1.3;
+                                margin: auto;
+
+                                @include media('lb') {
+                                    width: 180px;
+                                    height: 180px;
+                                    font-size: 26px;
+                                }
+
+                                @include media('sp') {
+                                    font-size: 22px;
+                                    width: 150px;
+                                    height: 150px;
+                                }
+
+                                @include media('sm') {
+                                    width: 120px;
+                                    height: 120px;
+                                    font-size: 20px;
+                                }
+                            }
+
+                            &_des {
+                                font-size: 22px;
+                                text-align: center;
+
+                                @include media('sp') {
+                                    font-size: 18px;
+                                }
+
+                                @include media('sm') {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+
+                    &-box {
+                        display: flex;
+                        margin-top: 135px;
+                        border-width: 1px;
+                        border-style: solid;
+
+                        @include media('sp') {
+                            margin-top: 60px;
+                        }
+
+                        &.type02 {
+                            border: none;
+                            justify-content: flex-end;
+
+                            @include media('tb') {
+                                justify-content: center;
+                            }
+                        }
+
+                        @include media('sm') {
+                            flex-direction: column;
+                        }
+
+                        &>div {
+                            padding: 20px;
+
+                            @include media('sp') {
+                                padding: 10px;
+                            }
+                        }
+
+                        .box-left {
+                            color: #fff;
+                            width: 240px;
+                            display: flex;
+                            align-items: center;
+
+                            .box-head {
+                                font-size: 22px;
+                                position: relative;
+                                width: max-content;
+                                margin-bottom: 10px;
+
+                                @include media('lb') {
+                                    font-size: 20px;
+                                }
+
+                                @include media('sp') {
+                                    font-size: 18px;
+                                }
+
+                                &::after {
+                                    content: '';
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 2px;
+                                    background-color: #fff;
+                                    left: 0;
+                                    bottom: 0;
+                                }
+                            }
+
+                            .box-des {
+                                font-size: 18px;
+
+                                @include media('lb') {
+                                    font-size: 16px;
+                                }
+                            }
+
+                            .box-index {
+                                font-size: 14px;
+
+                                @include media('lb') {
+                                    font-size: 12px;
+                                }
+                            }
+
+                            @include media('lb') {
+                                width: 220px;
+                            }
+
+                            @include media('sm') {
+                                width: 100%;
+                            }
+                        }
+
+                        .box-right {
+                            width: calc(100% - 240px);
+
+                            @include media('lb') {
+                                width: calc(100% - 220px);
+                            }
+
+                            @include media('sm') {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

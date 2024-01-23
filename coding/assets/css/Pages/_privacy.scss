@@ -1,0 +1,79 @@
+.privacy_content {
+    .privacy-wrap {
+        max-width: 1120px;
+        width: calc(100% - 36px);
+        margin: auto;
+
+        .privacy-container {
+            border: 0.5px solid #8e8e8f;
+            padding: 100px 100px 185px;
+            box-shadow: 1.2px 1.2px 1.2px rgba(7, 2, 3, 0.5);
+            @include media('tb') {
+                padding: 80px 40px 120px;
+            }
+            @include media('sp') {
+                padding: 50px 25px 90px;
+            }
+            .privacy-head {
+                font-size: 28px;
+                text-align: center;
+                margin-bottom: 80px;
+
+                @include media('sp') {
+                    font-size: 20px;
+                    margin-bottom: 40px;
+                }
+            }
+
+            .privacy_block {
+                margin-bottom: 45px;
+
+                .title {
+                    font-size: 20px;
+                    position: relative;
+                    padding-left: 45px;
+                    margin-bottom: 25px;
+
+                    &:before {
+                        position: absolute;
+                        content: '';
+                        width: 30px;
+                        height: 3px;
+                        background-color: #BDBEBF;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 0;
+                        display: block;
+
+                        @include media ('sp') {
+                            width: 15px;
+                        }
+                    }
+
+                    @include media('sp') {
+                        padding-left: 30px;
+                        margin-bottom: 10px;
+                        font-size: 18px;
+                    }
+                }
+
+                .content {
+                    font-size: 16px;
+                    line-height: 2;
+                    letter-spacing: 0;
+
+                    @include media('sp') {
+                        font-size: 14px
+                    }
+                }
+            }
+        }
+        .btn {
+            margin: auto;
+            margin-top: 90px;
+            @include media('sp') {
+                margin-top: 40px;
+            }
+        }
+    }
+}

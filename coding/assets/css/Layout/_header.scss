@@ -1,0 +1,177 @@
+header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 20px;
+    z-index: 10;
+    transition: all .5s;
+    &.active {
+        top: 0;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19)
+    }
+    .header-wrap {
+        height: 90px;
+        position: relative;
+        display: flex;
+        padding-right: 175px;
+        justify-content: space-between;
+        align-items: center;
+
+        @include media('sp') {
+            padding-right: 0;
+        }
+            .logo {
+                display: flex;
+                gap: 16px;
+    
+                @include media('sm') {
+                    gap: 10px;
+                }
+    
+                img {
+                    width: 60px;
+                    object-fit: contain;
+    
+                    @include media('sm') {
+                        width: 50px;
+                    }
+                }
+    
+                p {
+                    font-size: 16px;
+    
+                    @include media('sm') {
+                        font-size: 14px;
+                    }
+    
+                    span {
+                        font-size: 28px;
+    
+                        @include media('sm') {
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+    
+            ul {
+                display: flex;
+                gap: 30px;
+                justify-content: space-between;
+                align-items: center;
+    
+                @include media('sp') {
+                    gap: 15px;
+                }
+                img {
+                    transition: all .5s;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+                // img {
+                //     &.iphone {
+                //         width: 22.5px;
+    
+                //         @include media('sp') {
+                //             width: 15px;
+                //         }
+                //     }
+    
+                //     &.face {
+                //         width: 17.5px;
+    
+                //         @include media('sp') {
+                //             width: 12px;
+                //         }
+                //     }
+    
+                //     &.insta {
+                //         width: 33px;
+    
+                //         @include media('sp') {
+                //             width: 20px;
+                //         }
+                //     }
+                // }
+            }
+    
+            .hamburger {
+                width: 120px;
+                height: 140px;
+                background-color: #FFE900;
+                border-bottom-left-radius: 160px;
+                border-bottom-right-radius: 160px;
+                position: absolute;
+                top: -20px;
+                right: 0;
+                @include media('sm') {
+                    width: 80px;
+                    height: 100px;
+                }
+    
+                .nav-btn {
+                    cursor: pointer;
+                    height: 30px;
+                    position: absolute;
+                    left: 50%;
+                    top: calc(50% - 7px);
+                    width: 60px;
+                    transform: translate(-50%, -50%);
+                    z-index: 100;
+    
+                    @include media('sm') {
+                        top: calc(50% + 5px);
+                        height: 20px;
+                    }
+                    &.active {
+                        span:first-child {
+
+                            top: 50%;
+                            transform: translate(-50%, -50%) rotate(-45deg);
+                        }
+                        span:nth-child(2) {
+                            opacity: 0;
+                        }
+                        span:last-child {
+                            top: 50%;
+                            transform: translate(-50%, -50%) rotate(45deg);
+                        }
+                    }
+                    span {
+                        background-color: #DF67A0;
+                        height: 3px;
+                        width: 45px;
+                        display: block;
+                        position: absolute;
+                        transform: translateX(-50%);
+                        left: 50%;
+                        border-radius: 10px;
+                        transition: all .5s;
+                        @include media('sm') {
+                            width: 30px;
+                            height: 2px;
+                        }
+    
+                        &:first-child {
+                            top: 0;
+                        }
+    
+                        &:nth-child(2) {
+                            top: 50%;
+                            width: 35px;
+    
+                            @include media('sm') {
+                                width: 25px;
+                            }
+                        }
+    
+                        &:last-child {
+                            top: 100%;
+                        }
+                    }
+                }
+            }
+
+    }
+}

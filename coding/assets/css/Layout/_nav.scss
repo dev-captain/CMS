@@ -1,0 +1,229 @@
+.menu-nav {
+    background: linear-gradient(#f5edb4 0%, #f9f4d4 12.54%, #fdfcf3 26.79%, #fff 34.77%, #fdf7fa 45.89%, #f9e2ed 62.73%, #f4c7dc 79.56%);
+    width: 100vw;
+    overflow: scroll;
+    height: 100vh;
+    padding: 100px 0;
+
+    @include media('sp') {
+        padding: 50px 0;
+    }
+
+    // height: 100vh;/
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: -100vw;
+    transition: all .5s;
+    min-height: 100vh;
+
+    &.active {
+        right: 0;
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+
+        @include media('tb') {
+            gap: 25px;
+        }
+
+        @include media('sp') {
+            flex-direction: column;
+        }
+
+        .nav-left {
+            .logo {
+                display: flex;
+                gap: 16px;
+                margin-bottom: 30px;
+
+                @include media('sm') {
+                    gap: 10px;
+                }
+
+                img {
+                    width: 60px;
+                    object-fit: contain;
+
+                    @include media('sm') {
+                        width: 50px;
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+
+                    @include media('sm') {
+                        font-size: 14px;
+                    }
+
+                    span {
+                        font-size: 28px;
+
+                        @include media('sm') {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+
+            .nav-list {
+                &>li {
+                    padding-left: 20px;
+                    position: relative;
+                    margin-bottom: 40px;
+
+                    &::before {
+                        width: 10px;
+                        height: 10px;
+                        background-color: #BDBEBF;
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 10px;
+                        border-radius: 50%;
+                    }
+
+                    &.li-corse {
+                        margin-bottom: 240px;
+                    }
+
+                    .li-jp {
+                        font-size: 20px;
+
+                        @include media('tb') {
+                            font-size: 18px;
+                        }
+                    }
+
+                    .li-en {
+                        font-size: 16px;
+                        width: max-content;
+                        position: relative;
+
+                        &.corse-en {
+                            .en-des {
+                                position: absolute;
+                                width: max-content;
+                                left: 50%;
+                                padding-top: 25px;
+
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    bottom: 12px;
+                                    left: 0;
+                                    width: 1px;
+                                    height: calc(100% - 15px);
+                                    background-color: #BDBEBF;
+                                }
+
+                                li {
+                                    position: relative;
+                                    padding-left: 70px;
+
+                                    margin-bottom: 25px;
+
+                                    &:last-child {
+                                        margin-bottom: 0;
+                                    }
+
+                                    &::before {
+                                        width: 60px;
+                                        height: 1px;
+                                        content: '';
+                                        background-color: #BDBEBF;
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 0;
+                                        transform: translateY(-50%);
+                                    }
+
+                                }
+                            }
+
+                        }
+                    }
+
+                    .sns {
+                        display: block;
+                        margin-top: 40px;
+
+                        &:last-child {
+                            margin-top: 25px;
+
+                            span {
+                                &::before {
+                                    content: '\f16d';
+                                }
+                            }
+                        }
+
+                        span {
+                            position: relative;
+                            padding-left: 35px;
+
+                            &::before {
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                content: "\f39e";
+                                font-family: FontAwesome;
+                                font-size: 20px;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .nav-right {
+            width: calc(100% - 455px - 40px);
+            max-width: 400px;
+
+            @include media('tb') {
+                width: calc(100% - 410px - 25px);
+            }
+
+            @include media('sp') {
+                width: 100%;
+            }
+
+            .btn {
+                margin: auto;
+                width: 100%;
+                margin-top: 30px;
+            }
+
+            .jun-34 {
+                font-size: 20px;
+                margin-top: 50px;
+
+                @include media('tb') {
+                    font-size: 18px;
+                }
+            }
+
+            .number {
+                font-size: 48px;
+                margin: 15px 0;
+
+                @include media('tb') {
+                    font-size: 40px;
+                }
+            }
+
+            .service {
+                font-size: 24px;
+
+                @include media('tb') {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
