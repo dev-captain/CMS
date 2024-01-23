@@ -1,0 +1,69 @@
+.detail {
+    padding-top: 185rem;
+    padding-bottom: 300rem;
+    @include media('sp') {
+        padding-top: 70rem;
+        padding-bottom: 100rem;
+    }
+    .wrap {
+        position: relative;
+        padding: 100rem 195rem;
+        color: #fff;
+        background-color: $primary;
+        @include media('sp') {
+            padding: 20rem 20rem;
+        }
+        .detail_img {
+            position: absolute;
+            top: -80rem;
+            left: -80rem;
+            width: 525rem;
+            @include media('tb') {
+                top: -40rem;
+                left: -40rem;
+            }
+            @include media('sp') {
+                position: relative;
+                top: unset;
+                left: unset;
+                width: 100%;
+            }
+        }
+
+        .top {
+            padding-left: 405rem;
+            font-family: yu-db;
+            margin-bottom: 120rem;
+            @include media('sp') {
+                padding-left: 0;
+                margin-bottom: 40rem;
+                margin-top: 10rem;
+            }
+            .date {
+                margin-bottom: 25rem;
+            }
+
+            .detail_ttl {
+                font-size: 38rem;
+                @include media('sp') {
+                    font-size: 25rem;
+                }
+            }
+        }
+        .content {
+            font-size: 20rem;
+            @include media('sp') {
+                font-size: 15rem;
+            }
+        }
+        .btn {
+            background-color: $primary;
+
+            &:hover {
+                background-color: #fff;
+                border: 2px solid #fff;
+                color: $primary;
+            }
+        }
+    }
+}

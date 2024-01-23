@@ -1,0 +1,217 @@
+main.about {
+  .fv {
+    position: relative;
+    .right-box {
+      position: absolute;
+      width: 400rem;
+      height: 590rem;
+      top: 0;
+      right: -0%;
+      background-color: $primary;
+      z-index: -1;
+    }
+    .ttl {
+      display: flex;
+      align-items: center;
+      gap: 30rem;
+
+      .jp {
+        font-size: 50rem;
+        font-family: hiragino;
+
+        @include media("sp") {
+          font-size: 25rem;
+        }
+      }
+
+      .en {
+        font-size: 25rem;
+
+        @include media("sp") {
+          font-size: 20rem;
+        }
+      }
+    }
+
+    .content {
+      font-size: 30rem;
+
+      @include media("sp") {
+        font-size: 18rem;
+      }
+    }
+
+    .fv-top {
+      position: relative;
+
+      @include media("sp") {
+        margin-bottom: 180rem;
+      }
+      
+      .left {
+        position: absolute;
+        width: 50%;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #fff;
+        color: $primary;
+        padding-bottom: 40rem;
+
+        @include media("sp") {
+          bottom: -60%;
+          top: unset;
+          width: calc(100% - 80rem);
+          padding: 30rem;
+          transform: unset;
+        }
+      }
+
+      img {
+        width: calc(50% + 250rem);
+        margin-left: auto;
+        display: block;
+
+        @include media("sp") {
+          width: calc(100% - 40rem);
+        }
+      }
+    }
+
+    .fv-bot {
+      margin-top: -50rem;
+      display: flex;
+      align-items: center;
+
+      @include media("sp") {
+        position: relative;
+        margin: 0;
+        margin-bottom: 180rem;
+      }
+
+      &>div {
+        width: 50%;
+
+        @include media("sp") {
+          width: calc(100% - 80rem);
+        }
+      }
+
+      .left {
+        @include media('sp') {
+          width: calc(100% - 40rem);
+        }
+      }
+
+      .right {
+        padding-left: 160rem;
+        margin-top: 60rem;
+
+        @include media("sp") {
+          margin-top: 0;
+          position: absolute;
+          bottom: -50%;
+          width: calc(100% - 80rem);
+          padding: 30rem;
+          right: 0;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  .value {
+    background: url(../img/about/value.png);
+    padding: 115rem 0 170rem;
+    @include media('sp') {
+      padding: 60rem 0;
+      
+    }
+    .sec-jp {
+      font-size: 70rem;
+
+      @include media('sp') {
+        font-size: 35rem;
+      }
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .value-content {
+      max-width: 1240rem;
+      margin: auto;
+      margin-top: 125rem;
+      @include media('sp') {
+        margin-top: 60rem;
+      }
+      li {
+        background-color: #2C3138;
+        display: flex;
+        align-items: center;
+        padding: 35rem 10rem;
+        gap: 45rem;
+        color: #fff;
+        margin-bottom: 20rem;
+        @include media('sp') {
+          padding: 15rem 10rem;
+          margin-bottom: 10rem;
+          gap: 25rem;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .left {
+          width: 370rem;
+          text-align: center;
+          font-size: 25rem;
+          border-right: 1px solid #fff;
+          @include media('sp') {
+            font-size: 20rem;
+            width: 180rem;
+          }
+        }
+      }
+    }
+  }
+  .construction {
+    background-color: $primary;
+    padding: 95rem 0;
+    @include media("sp") {
+      padding: 45rem 0;
+    }
+    .img-slick {
+      margin-top: 55rem;
+      @include media("sp") {
+        margin-top: 35rem;
+      }
+      .slick-slide {
+        margin: 0 15rem;
+        @include media("sp") {
+          margin: 0 8rem;
+        }
+      }
+      .slick-dots {
+        bottom: -55rem;
+        @include media("sp") {
+          bottom: -45rem;
+        }
+        li {
+          border: 1px solid #fff;
+          border-radius: 50%;
+          width: 15rem;
+          height: 15rem;
+          @include media("sp") {
+            width: 10rem;
+            height: 10rem;
+          }
+          &.slick-active {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

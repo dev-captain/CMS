@@ -1,0 +1,113 @@
+.foot {
+  padding: 130rem 0 140rem;
+  background: url(../img/common/footer.png) center center no-repeat;
+  background-size: cover;
+  @include media("sp") {
+    padding: 65rem 0 70rem;
+  }
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 50rem;
+    @include media("sp") {
+      flex-direction: column;
+      gap: 25rem;
+    }
+    & > div {
+      max-width: 650rem;
+      width: calc(50% - 25rem);
+      @include media("sp") {
+        width: 100%;
+        margin: auto;
+      }
+      color: #fff;
+      .jp {
+        font-size: 28rem;
+        font-family: yu-db;
+      }
+      .en {
+        font-size: 24rem;
+      }
+      @include media("tb") {
+        .jp {
+          font-size: 25rem;
+        }
+        .en {
+          font-size: 20rem;
+        }
+      }
+      @include media("sp") {
+        .jp {
+          font-size: 20rem;
+        }
+        .en {
+          font-size: 16rem;
+        }
+      }
+      ul {
+        li {
+          border-bottom: 1px solid #fff;
+          padding-top: 50rem;
+          position: relative;
+          &:after {
+            position: absolute;
+            content: "";
+            bottom: 10rem;
+            width: 20rem;
+            height: 16rem;
+            display: block;
+            right: 5px;
+            background: url(../img/common/link-arrow.svg) no-repeat center
+              center;
+            background-size: cover;
+            transition: all 0.8s;
+            @include media("sp") {
+              width: 15rem;
+              height: 12rem;
+            }
+          }
+          &:hover {
+            &:after {
+              scale: 1.2;
+            }
+          }
+          @include media("sp") {
+            padding-top: 25rem;
+          }
+          &:first-child {
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 75rem 0 45rem;
+  @include media("sp") {
+    padding: 30rem;
+  }
+  .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media("sp") {
+      flex-direction: column;
+      gap: 20rem;
+    }
+    .copy {
+      font-family: segoe;
+      font-size: 20rem;
+      text-align: right;
+      @include media("tb") {
+        font-size: 16rem;
+      }
+      @include media("sp") {
+        text-align: center;
+        font-size: 14rem;
+      }
+    }
+  }
+}

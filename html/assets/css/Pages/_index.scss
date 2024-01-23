@@ -1,0 +1,287 @@
+body.top_page {
+  background-color: $primary;
+}
+main.top {
+  background-color: $primary;
+  .fv {
+    padding-top: 100rem;
+    @include media("sp") {
+      padding-top: 50rem;
+    }
+    .wrap {
+      display: flex;
+      align-items: flex-start;
+      @include media("sp") {
+        flex-direction: column;
+        gap: 45rem;
+      }
+      .left,
+      .right {
+        max-width: 800rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .ttl {
+          font-size: 115rem;
+          font-family: cambri;
+          position: relative;
+          z-index: 10;
+          color: #fff;
+          @include media("lb") {
+            font-size: 85rem;
+          }
+         
+          @include media("sp") {
+            font-size: 50rem;
+          }
+        }
+        .img_div {
+          position: relative;
+          font-family: hiragino;
+          p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: max-content;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20rem;
+            @include media("sp") {
+              padding: 10rem;
+            }
+          }
+        }
+      }
+      .left {
+        margin-right: -85rem;
+        @include media("sp") {
+          margin: auto;
+        }
+        .img_div {
+          font-size: 45rem;
+         
+          @include media("tb") {
+            font-size: 25rem;
+          }
+        }
+      }
+      .right {
+        margin-left: -85rem;
+        margin-top: 145rem;
+        flex-direction: column-reverse;
+        
+        @include media("sp") {
+          margin: auto;
+          flex-direction: column;
+        }
+        .img_div {
+          font-size: 28rem;
+          @include media("tb") {
+            font-size: 20rem;
+          }
+        }
+      }
+    }
+  }
+  .sale {
+    padding-top: 115rem;
+    padding-bottom: 100rem;
+    @include media("sp") {
+      padding: 65rem 0 50rem;
+    }
+    .info-list {
+      margin-top: 100rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 80rem;
+      @include media("tb") {
+        margin-top: 70rem;
+        gap: 20rem;
+      }
+      @include media("sp") {
+        flex-direction: column;
+        margin-top: 50rem;
+        gap: 30rem;
+      }
+      .blog {
+        background-color: #454545;
+        color: #fff;
+        position: relative;
+        max-width: 450rem;
+        margin: auto;
+        .des {
+          padding: 10rem 15rem 15rem;
+          & > div {
+            position: relative;
+          }
+          .date {
+            font-size: 14rem;
+            margin-top: 15rem;
+          }
+        }
+        &:hover {
+          .triangle {
+            right: -5rem;
+          }
+        }
+      }
+    }
+  }
+  .news {
+    background: url(../img/index/news.png) no-repeat center center;
+    background-size: cover;
+    padding: 115rem 0 65rem;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 30rem;
+      @include media("lb") {
+        flex-direction: column;
+        align-items: center;
+      }
+      .left {
+      }
+      .right {
+        width: 1000rem;
+        @include media("lb") {
+          width: 100%;
+          max-width: 1000rem;
+        }
+        li {
+          color: #fff;
+          padding: 40rem 0 15rem;
+          border-bottom: 1px solid #fff;
+          position: relative;
+          padding-right: 30rem;
+          font-family: yu-db;
+          &:first-child {
+            padding-top: 0;
+          }
+
+          .news-content {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          &:after {
+            position: absolute;
+            content: "";
+            bottom: 20rem;
+            width: 20rem;
+            height: 16rem;
+            display: block;
+            right: 5rem;
+            background: url(../img/common/link-arrow.svg) no-repeat center
+              center;
+            background-size: cover;
+            transition: all 0.5s;
+            @include media("sp") {
+              width: 15rem;
+              height: 12rem;
+            }
+          }
+          &:hover {
+            &:after {
+              // transform: rotate(40deg);
+              bottom: 20rem;
+              scale: 1.1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .construction {
+    padding: 95rem 0;
+    @include media("sp") {
+      padding: 45rem 0;
+    }
+    .img-slick {
+      margin-top: 55rem;
+      @include media("sp") {
+        margin-top: 35rem;
+      }
+      .slick-slide {
+        margin: 0 15rem;
+        @include media("sp") {
+          margin: 0 8rem;
+        }
+      }
+      .slick-dots {
+        bottom: -55rem;
+        @include media("sp") {
+          bottom: -45rem;
+        }
+        li {
+          border: 1px solid #fff;
+          border-radius: 50%;
+          width: 15rem;
+          height: 15rem;
+          @include media("sp") {
+            width: 10rem;
+            height: 10rem;
+          }
+          &.slick-active {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .series {
+    padding: 120rem 0 155rem;
+    background: url(../img/index/news.png) no-repeat center center;
+    background-size: cover;
+    @include media("sp") {
+      padding: 60rem 0 75rem;
+    }
+    .sec-jp,
+    .sec-en {
+      @include media("tb") {
+        text-align: center;
+      }
+    }
+    .series-list {
+      margin-top: 80rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30rem;
+      @include media("sp") {
+        margin-top: 40rem;
+      }
+      .blog {
+        width: 705rem;
+        margin: auto;
+       
+        @include media("tb") {
+          max-width: 900rem;
+          width: 100%;
+        }
+        color: #fff;
+        display: flex;
+        background-color: #303030;
+        .content {
+          width: calc(100% - 185rem);
+          @include media("sp") {
+            width: calc(100% - 150rem);
+            padding: 10rem;
+          }
+          padding: 20rem;
+          position: relative;
+          .triangle {
+            right: 15rem;
+            bottom: 15rem;
+          }
+        }
+        img {
+          width: 185rem;
+          @include media('sp') {
+            width: 150rem;
+          }
+        }
+      }
+    }
+  }
+}

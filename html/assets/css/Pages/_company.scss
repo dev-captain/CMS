@@ -1,0 +1,138 @@
+main.company {
+  .banner {
+    padding-left: clamp(20rem, calc((100% - 1500rem) / 2), 100%);
+    // padding-left: calc((100% - 1500rem) / 2);
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    justify-content: space-between;
+    .sec-jp,
+    .sec-en {
+      color: $primary;
+    }
+    .left {
+      background-color: #fff;
+    }
+    .right {
+      font-size: 110rem;
+      font-family: yu-db;
+      color: #454d57;
+      position: relative;
+      line-height: 1;
+      .rect {
+        position: absolute;
+        height: 345rem;
+        width: 1100rem;
+        right: 0;
+        bottom: 0;
+        background-color: $primary;
+        content: "";
+        z-index: -1;
+      }
+    }
+  }
+  .info {
+    font-family: gothic;
+    padding: 205rem 0 150rem;
+    @include media("sp") {
+      padding: 100rem 0 75rem;
+    }
+    .wrap {
+      max-width: 995rem;
+      table {
+        border: none;
+        tr {
+          td {
+            padding: 20rem 0;
+            padding-left: 20rem;
+            @include media("sp") {
+              padding: 10rem 0;
+              padding-left: 10rem;
+            }
+            &:first-child {
+              width: 305rem;
+              border-bottom: 1px solid $primary;
+              @include media('sp') {
+                width: 250rem;
+              }
+            }
+            &:last-child {
+              width: 690rem;
+              border-bottom: 1px solid #cccccc;
+            }
+          }
+        }
+      }
+      ul {
+        li {
+          padding: 20rem 0 0;
+          display: flex;
+          align-items: flex-start;
+          width: 100%;
+          span {
+            display: block;
+            padding-left: 30rem;
+            padding-bottom: 20rem;
+            &:first-child {
+              width: 305rem;
+              border-bottom: 1px solid $primary;
+            }
+            &:last-child {
+              width: 690rem;
+              border-bottom: 1px solid #cccccc;
+            }
+          }
+        }
+      }
+    }
+  }
+  .access {
+    padding-bottom: 350rem;
+    @include media('sp') {
+        padding-bottom: 150rem;
+    }
+    .wrap {
+      p {
+        display: flex;
+        align-items: center;
+        gap: 15rem;
+        margin-bottom: 60rem;
+        @include media("sp") {
+          margin-bottom: 30rem;
+          gap: 10rem;
+        }
+        .map {
+          width: 14rem;
+          @include media("sp") {
+            width: 10rem;
+          }
+        }
+        .en {
+          font-size: 20rem;
+          @include media("sp") {
+            font-size: 16rem;
+          }
+        }
+        .jp {
+          font-family: hiragino;
+          font-size: 24rem;
+          margin-right: 10rem;
+          @include media("sp") {
+            font-size: 20rem;
+            margin-right: 5rem;
+          }
+        }
+      }
+      .map_img {
+        width: 100%;
+        height: 850rem;
+        @include media('tb') {
+            height: 600rem;
+        }
+        @include media('sp') {
+            height: 400rem;
+        }
+      }
+    }
+  }
+}

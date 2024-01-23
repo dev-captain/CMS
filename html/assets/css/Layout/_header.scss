@@ -1,0 +1,95 @@
+header {
+  font-family: yu-db;
+  color: #fff;
+  position: relative;
+
+
+  .container {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    @include media('sp') {
+      padding: 20rem;
+    }
+    .banner-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 440rem;
+      @include media('tb') {
+        width: 390rem;
+      }
+      @include media('sp') {
+        width: 280rem;
+      }
+    }
+
+    .nav-link {
+      padding: 40rem 0 40rem;
+      display: flex;
+      gap: 50rem;
+      font-size: 19rem;
+      background-color: $primary;
+      align-items: center;
+      width: 1150rem;
+      @include media('tb') {
+        width: 980rem;
+      }
+      justify-content: center;
+
+      li {
+        position: relative;
+        text-align: center;
+        &:after {
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 1px;
+          background-color: #fff;
+          left: 0;
+          bottom: 0;
+          transition: all 0.5s;
+        }
+
+        &:hover {
+          &:after {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .logo {
+      padding-left: 20rem;
+      @include media('sp') {
+        padding-left: 0;
+      }
+    }
+  }
+  .banner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    .left {
+      padding-left: clamp(40rem, 40rem, calc((100% - 1500rem) / 2));
+      padding-left: calc((100% - 1500rem) / 2);
+      @include media('tb') {
+        padding-left: 40rem;
+      }
+      @include media('sp') {
+        padding-left: 0;
+        width: 100%;
+      }
+    }
+    .right {
+      background-color: $primary;
+      width: 1150rem;
+      padding-top: 120rem;
+      @include media('tb') {
+        width: 980rem;
+        padding-top: 100rem;
+      }
+    }
+  }
+
+}

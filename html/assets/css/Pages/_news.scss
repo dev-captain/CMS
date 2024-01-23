@@ -1,0 +1,73 @@
+.news-list {
+    width: 1340rem;
+    margin: auto;
+    padding-top: 160rem;
+    padding-bottom: 300rem;
+
+    @include media('sp') {
+        padding-top: 80rem;
+        padding-bottom: 150rem;
+        width: 100%;
+    }
+
+    ul {
+        li {
+            border-bottom: 1px solid $primary;
+            margin-bottom: 60rem;
+
+            @include media('sp') {
+                margin-bottom: 30rem;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                position: relative;
+                &:after {
+                    position: absolute;
+                    content: "";
+                    bottom: 10rem;
+                    width: 17rem;
+                    height: 17rem;
+                    display: block;
+                    right: 5px;
+                    background: url(../img/common/black-arrow.png) no-repeat center center;
+                    background-size: cover;
+                    transition: all 0.5s;
+
+                    @include media("sp") {
+                        width: 15rem;
+                        height: 12rem;
+                    }
+                }
+
+                &:hover {
+                    &:after {
+                        scale: 1.1;
+                    }
+                }
+
+                .date {
+                    font-family: gothic;
+                }
+
+                span:not(.date) {
+                    font-size: 28rem;
+                    font-family: yu-db;
+                    width: 925rem;
+                    display: block;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+
+                    @include media('sp') {
+                        width: calc(100% - 50px);
+                        font-size: 16rem;
+                    }
+                }
+            }
+        }
+    }
+}

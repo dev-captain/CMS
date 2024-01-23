@@ -1,0 +1,58 @@
+main.property {
+    padding-top: 260rem;
+    padding-bottom: 500rem;
+
+    @include media('sp') {
+        padding-top: 100rem;
+        padding-bottom: 200rem;
+    }
+
+    .wrap {
+            .property-blog {
+                display: flex;
+                flex-wrap: wrap;
+                @include media('sp') {
+                    flex-direction: column;
+                }
+
+                .blog {
+                    width: 50%;
+                    border-bottom: 1px solid #707070;
+                    padding-bottom: 35rem;
+                    padding-top: 35rem;
+
+                    @include media('sp') {
+                        width: 100%;
+                        padding: 20rem 0;
+                    }
+
+                    .content {
+                        padding: 0 70rem 25rem;
+                        border-left: 1px solid #2c3138;
+                        border-right: 1px solid #2c3138;
+
+                        @include media('sp') {
+                            padding: 0 20rem 10rem;
+                        }
+
+                        ul {
+                            margin-top: 20rem;
+                            list-style: circle;
+                            padding-left: 20rem;
+                        }
+                    }
+
+                    &:nth-child(even) {
+                        .content {
+                            border-left: none;
+
+                            @include media('sp') {
+                                border-left: 1px solid #2c3138;
+                                ;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+}

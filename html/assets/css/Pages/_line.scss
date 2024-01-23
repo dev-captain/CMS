@@ -1,0 +1,63 @@
+main.line {
+    .sale {
+        padding-top: 115rem;
+        padding-bottom: 200rem;
+
+        @include media("sp") {
+            padding: 65rem 0 100rem;
+        }
+
+        .info-list {
+            display: flex;
+            gap: 80rem;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            &.second {
+                margin-top: 175rem;
+                @include media('sp') {
+                    margin-top: 80rem;
+                }
+            }
+            @include media("sp") {
+                gap: 10rem;
+            }
+
+            .blog {
+                background-color: #454545;
+                color: #fff;
+                position: relative;
+                max-width: 450rem;
+                width: calc((100% - 160rem) / 3);
+                @include media('sp') {
+                    width: calc((100% - 15rem) / 2);
+                }
+                .des {
+                    padding: 10rem 15rem 15rem;
+
+                    @include media('sp') {
+                        font-size: 14rem;
+                        padding: 10rem;
+                    }
+
+                    &>div {
+                        position: relative;
+                    }
+
+                    .date {
+                        font-size: 14rem;
+                        margin-top: 15rem;
+                        @include media('sp') {
+                            margin-top: 10rem;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .triangle {
+                        right: -5rem;
+                    }
+                }
+            }
+        }
+    }
+}
